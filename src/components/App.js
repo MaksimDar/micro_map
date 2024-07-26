@@ -1,19 +1,6 @@
-
-// import './App.css';
-// import { Map } from './Components/Map';
-// export default function App() {
-//   return (
-//     Map()
-//   );
-// }
-
-// src/App.js
-// src/App.js
-import React, { Suspense } from 'react';
+import React from 'react';
 import './App.css';
-
-import Map from './Pages/Map';
-
+import Map from './Map';
 const App = () => {
   return (
     <div className="App">
@@ -21,9 +8,7 @@ const App = () => {
         <h1>Microspace</h1>
       </header>
       <section className="App-section">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Map />
-        </Suspense>
+        <Map />
       </section>
       <footer className="App-footer">
         <h1>Good bye</h1>
@@ -33,6 +18,7 @@ const App = () => {
 };
 
 export default App;
+
 
 
 
