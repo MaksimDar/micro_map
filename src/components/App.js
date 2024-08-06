@@ -1,18 +1,15 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import './App.css';
-import Map from './Map';
+import Header from './AppMenu';
+import MapSection from './MapSection';
+
+const Footer = lazy(() => import('../pages/Footer'));
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Microspace</h1>
-      </header>
-      <section className="App-section">
-        <Map />
-      </section>
-      <footer className="App-footer">
-        <h1>Good bye</h1>
-      </footer>
+      <Header />
+      <MapSection />
+      <Footer />
     </div>
   );
 };
