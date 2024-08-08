@@ -1,4 +1,4 @@
-// src/components/Map.js
+// // src/components/Map.js
 import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import './Map.css';
@@ -7,14 +7,18 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFrc3ltMTgiLCJhIjoiY2x5c280eDF2MDkweDJrc2N3a
 
 const MapBox = () => {
     const mapContainer = useRef(null);
-    const japanCoordinates = [138.2529, 36.2048];
+    const japanCoordinates = [138.2529, 38.5048];
+    // const TokyoCoordinates = [139.69171, 35.6895];
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapContainer.current,
             // style: 'mapbox://styles/mapbox/streets-v11',
             style: 'mapbox://styles/mapbox/streets-v12',
+            // center: TokyoCoordinates,
+            // zoom: 9
             center: japanCoordinates,
-            zoom: 4
+            zoom: 4.5
+
         });
 
         map.addControl(new mapboxgl.NavigationControl());
@@ -29,4 +33,7 @@ const MapBox = () => {
 };
 
 export default MapBox;
+
+
+
 
