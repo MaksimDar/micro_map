@@ -4,6 +4,7 @@ import Header from './AppMenu';
 import MapSection from './MapSection';
 
 const Footer = lazy(() => import('../pages/Footer'));
+
 const App = () => {
   return (
     <div className="App">
