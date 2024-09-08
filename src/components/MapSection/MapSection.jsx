@@ -9,10 +9,9 @@ const MapSection = () => {
         <>
             <Section>
                 <PlaceSearch />
-                <MapContainer>
-                    <MapBox />
-
-                </MapContainer>
+                {/* <MapContainer> */}
+                <MapBox />
+                {/* </MapContainer> */}
             </Section>
 
         </>

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@mapbox/mapbox-gl-geocoder": "^5.0.2",
+    "@mapbox/search-js-react": "^1.0.0-beta.22",
     "@types/mapbox__mapbox-gl-geocoder": "^5.0.0",
     "axios": "^1.7.3",
     "mapbox-gl": "^3.5.2",
