@@ -92,9 +92,9 @@ export default function MapWithGeocoder() {
         mapboxgl.accessToken = accessToken;
 
         mapInstanceRef.current = new mapboxgl.Map({
-            container: mapContainerRef.current, // container ID
+            container: mapContainerRef.current,
             center: [138.2529, 38.5048],
-            zoom: 5,
+            zoom: 4.3,
         });
 
         mapInstanceRef.current.on("load", () => {

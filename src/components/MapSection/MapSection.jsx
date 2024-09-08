@@ -1,14 +1,14 @@
 import React from "react";
 import MapBox from '../Map';
-import PlaceSearch from "../PlaceSearch";
-import { Section, MapContainer } from './MapSection.styled';
+// import PlaceSearch from "../PlaceSearch";
+import { Section } from './MapSection.styled';
 
 const MapSection = () => {
 
     return (
         <>
             <Section>
-                <PlaceSearch />
+                {/* <PlaceSearch /> */}
                 {/* <MapContainer> */}
                 <MapBox />
                 {/* </MapContainer> */}
